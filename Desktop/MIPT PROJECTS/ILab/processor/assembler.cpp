@@ -8,7 +8,8 @@
 
 
 
-
+//ЗАЛУУУУУУПААААА
+//int x = 0
 Label labels[MAX_LABEL_AMOUNT] = {};
 int labels_count = 0;
 int* bytecode = NULL; //TODO сделать структуру ASM, которая в себе имеет: bytecode, lines, lines_count и тд
