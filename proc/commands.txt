@@ -1,0 +1,23 @@
+push 50
+push 30
+push 80
+push 70
+push 89
+add
+out
+push 45
+push 36
+add
+push 48
+jmp start
+push 56
+popr ax
+start:
+    push 90
+    push 91
+    add
+    out
+    hlt
+out
+hlt
+
