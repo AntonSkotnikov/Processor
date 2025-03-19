@@ -6,10 +6,6 @@
 #include <assert.h>
 
 
-
-
-//ЗАЛУУУУУУПААААА
-//int x = 0
 Label labels[MAX_LABEL_AMOUNT] = {};
 int labels_count = 0;
 int* bytecode = NULL; //TODO сделать структуру ASM, которая в себе имеет: bytecode, lines, lines_count и тд
@@ -43,7 +39,7 @@ int add_label(const char* name, int address) {
 }
 
 int find_label(const char* name) {
-    assert(name != NULL); // TODO more asserts
+    assert(name != NULL);
 
     for (int i = 0; i < labels_count; i++) {
         if (strcmp(labels[i].name, name) == 0) {
@@ -57,7 +53,7 @@ int find_label(const char* name) {
 
 int command_to_code(const char* cmd) {
     assert(cmd != NULL);
-    //printf("size of cmd_table = %d, size of Command = %d\n", sizeof(cmd_table), sizeof(Command));
+    //BRUH printf("size of cmd_table = %d, size of Command = %d\n", sizeof(cmd_table), sizeof(Command));
     for (int i = 0; i < NUM_OF_COMMANDS; i++) {
         if (strcmp(cmd, cmd_table[i].name) == 0) {
             return cmd_table[i].code;
